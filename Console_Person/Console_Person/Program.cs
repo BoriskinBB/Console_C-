@@ -13,6 +13,9 @@ namespace Console_Person
             Console.WriteLine("Ваше Имя:");
             String N = Console.ReadLine();
             Console.WriteLine("Вас зовут:" + " " + N);
+            Console.WriteLine("Ваша Фамилия:");
+            String F = Console.ReadLine();
+            Console.WriteLine("Ваша Фамилия:" + " " + F);
              
         }
     }
