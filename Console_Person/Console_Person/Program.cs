@@ -6,25 +6,24 @@ using System.Threading.Tasks;
 
 namespace Console_Person
 {
-    class Program
+    class Program //Класс программы, точка входа
     {
         static void Main(string[] args)
         {
+            //Конструктор без параметров
             Person P_1 = new Person();
-            Console.WriteLine("Пример вводимых данных:");
-            Console.WriteLine("Ваше Фамилия:" + " " + "Иванов");
-            Console.WriteLine("Ваше Имя:" + " " + "Иван");
-            Console.WriteLine("Ваше Отчество:" + " " + "Ивановов");
-            Console.WriteLine("Вы родились:" + " " + "01.01.1600 года");
-            Console.WriteLine("Введите Вашу Фамилию:"); String F = Console.ReadLine();
-            Console.WriteLine("Введите Ваше Имя:");
-            Console.WriteLine("Введите Ваше Отчество:");
+            P_1.FName = "Борискин";
+            P_1.SName = "Борис";
+            P_1.TName = "Борисович";
+            P_1.Birthday = new DateTime(1980, 03, 12);
+            Console.WriteLine("Фамилия:" + " " + P_1.FName);
+            Console.WriteLine("Имя:" + " " + P_1.SName);
+            Console.WriteLine("Отчество:" + " " + P_1.TName);
            
-            String N = Console.ReadLine();
-            String L = Console.ReadLine();
-            Console.WriteLine("Ваша Фамилия:" + " " + F + N + L);
+            Console.WriteLine("Дата рождения:" + " " + "{0:d}", P_1.Birthday); //Формат сокращённой даты
+
             Console.ReadKey();
-            Console.WriteLine("Вас зовут:" + " " + N);
-        }
-    }
-}
+
+        }//End of Main
+    }//End of class Program
+}//End of namespase Console_Person
