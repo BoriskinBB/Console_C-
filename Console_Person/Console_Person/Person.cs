@@ -19,6 +19,6 @@ namespace Console_Person //Пространство имён класса пер
         public string SName { get { return sName;} set { sName = value; } }
         public string TName { get { return tName; } set { tName = value; } }
         public DateTime Birthday { get { return birthday; } set { birthday = value; } }
-        public string Snils{get { return snils;} set {snils = value;} }
+        public string Snils {get { return snils;} set {snils = value;} }
     } //End of class Person
 } //End of namespace
