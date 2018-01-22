@@ -25,6 +25,8 @@ namespace Console_Person
 
             Console.WriteLine("СНИЛС:" + P_1.Snils);
 
+            Console.WriteLine("Шпаргалка Git...");
+
             Console.ReadKey();
 
         }//End of Main
