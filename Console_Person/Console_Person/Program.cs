@@ -16,11 +16,14 @@ namespace Console_Person
             P_1.SName = "Борис";
             P_1.TName = "Борисович";
             P_1.Birthday = new DateTime(1980, 03, 12);
+            P_1.Snils = "003-020-010-00";
             Console.WriteLine("Фамилия:" + " " + P_1.FName);
             Console.WriteLine("Имя:" + " " + P_1.SName);
             Console.WriteLine("Отчество:" + " " + P_1.TName);
            
             Console.WriteLine("Дата рождения:" + " " + "{0:d}", P_1.Birthday); //Формат сокращённой даты
+
+            Console.WriteLine("СНИЛС:" + P_1.Snils);
 
             Console.ReadKey();
 
